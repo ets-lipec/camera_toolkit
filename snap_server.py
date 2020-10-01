@@ -27,8 +27,10 @@ def gen2(camera):
 @app.route('/image.jpg')
 def image():
     """Returns a single current image for the webcam"""
-    imfile=Response( gen2( Camera() ) , mimetype='image/jpeg' )
-    imgfile.save("image1.jpg")
+    frame = gen2( Camera() )
+    resp = Response( frame , mimetype='image/jpeg' )
+    open('frame.jpg', 'wb').write(resp.data)
+    return resp
     
     #cv2.imwrite(os.path.join(path , 'image1.jpg'), imfile)
     return imfile

@@ -1,0 +1,199 @@
+,Designation,Usage,W,(px),H,Aspect ratio,Aspect ratio,Aspect ratio,Total pixels
+,Designation,Usage,W,(px),H,Storage,Display,Pixel,Total pixels
+0,0.26K1,Microvision,16,×,16,1∶1,1∶1,1∶1,256
+1,0.46K1,Timex Datalink USB[1][2],42,×,11,42∶11,1∶1,5:9,462
+2,1.02K1,PocketStation,32,×,32,1∶1,1∶1,1∶1,1024
+3,1.2K3,Etch A Sketch Animator,40,×,30,4∶3,4∶3,1∶1,1200
+4,1.34K1,Epson RC-20[3],42,×,32,42∶32,1∶1,0.762,1344
+5,1.54K2,"GameKing I (GM-218), VMU",48,×,32,3∶2,3∶2,1∶1,1536
+6,2.4K2,Etch A Sketch Animator 2000,60,×,40,3∶2,3∶2,1∶1,2400
+7,4.03K7∶4,Nokia 3210 and many other early Nokia Phones,84,×,48,7∶4,2∶1,1.143,4032
+8,4.1K1,Hartung Game Master,64,×,64,1∶1,1∶1,1∶1,4096
+9,4.61K1,Field Technology CxMP smart watch[2],72,×,64,72∶64,1∶1,0.889,4608
+10,4.61K1,Montblanc e-Strap[4],128,×,36,128∶36,1∶1,0.281,4608
+11,4.8K1,Epoch Game Pocket Computer,75,×,64,75∶64,1∶1,1:1.171875,4800
+12,0.01M3.75,Entex Adventure Vision,150,×,40,150∶40,3.75,1∶1,6000
+13,0.01M2,"First graphing calculators: Casio fx-7000G, TI-81",96,×,64,3∶2,3∶2,1∶1,6144
+14,0.01M2,Pokémon Mini,96,×,64,3∶2,3∶2,1∶1,6144
+15,0.01M2,TRS-80,128,×,48,128∶48,3∶2,0.563,6144
+16,0.01M2,Early Nokia colour screen phones,96,×,65,96∶65,3∶2,1.016,6240
+17,0.01MA,Ruputer,102,×,64,102∶64,8∶5,1.004,6528
+18,0.01M4,"Sony Ericsson T68i, T300, T310 and other early colour screen phones",101,×,80,101∶80,5∶4,0.99,8080
+19,0.01M1,MetaWatch Strata & Frame watches,96,×,96,1∶1,1∶1,1∶1,9216
+20,0.02M3.75,"Atari Portfolio, TRS-80 Model 100",240,×,64,240∶64,3.75,1∶1,15360
+21,0.02MA,Atari Lynx,160,×,102,160∶102,8∶5,1.02,16320
+22,0.02M1,"Sony SmartWatch, Sifteo cubes, early color screen phones (square display)",128,×,128,1∶1,1∶1,1∶1,16384
+23,QQVGA,Quarter Quarter VGA:,160,×,120,4∶3,4∶3,1∶1,19200
+24,0.02M1.111,"Nintendo Game Boy (GB), Game Boy Color (GBC); Sega Game Gear (GG)",160,×,144,160∶144,10:9,1∶1,23040
+25,0.02M0.857,Pebble E-Paper Watch,144,×,168,144∶168,6:7,1∶1,24192
+26,0.02M1.053,Neo Geo Pocket Color,160,×,152,160∶152,20:19,1∶1,24320
+27,0.03M1,Palm LoRes,160,×,160,1∶1,1∶1,1∶1,25600
+28,0.03M3,"Apple II HiRes (6 color) and Apple IIe Double HiRes (16 color), grouping subpixels",140,×,192,140∶192,4∶3,1.828,26880
+29,0.03M3,"VIC-II multicolor, IBM PCjr 16-color, Amstrad CPC",160,×,200,160∶200,4∶3,5∶3,32000
+30,0.03M9,WonderSwan,224,×,144,14∶9,14∶9,1∶1,32256
+31,0.04M13∶11,"Nokia Series 60 smartphones (Nokia 7650, plus First and Second Edition models only)",208,×,176,13∶11,13∶11,1∶1,36608
+32,HQVGA,Half QVGA:Nintendo Game Boy Advance,240,×,160,3∶2,3∶2,1∶1,38400
+33,0.04M4,Older Java MIDP devices like Sony Ericsson K600,220,×,176,5∶4,5∶4,1∶1,38720
+34,0.04M3,Acorn BBC 20 column modes,160,×,256,160∶256,4∶3,2.133,40960
+35,0.04M1,"Nokia 5500 Sport, Nokia 6230i, Nokia 8800",208,×,208,1∶1,1∶1,1∶1,43264
+36,0.05M3,"TMS9918 modes 1 (e.g. TI-99/4a) and 2, ZX Spectrum, MSX, Nintendo DS (each screen)",256,×,192,4∶3,4∶3,1∶1,49152
+37,0.1M3,"Timex Sinclair 2068, Timex Computer 2048,",512,×,192,512∶192,4∶3,0.5,98304
+38,0.05M3,Apple II HiRes (1 bit per pixel),280,×,192,280∶192,4∶3,0.914,53760
+39,0.05M3,MSX2,256,×,212,256∶212,4∶3,1.104,54272
+40,0.06M1,Samsung Gear Fit,432,×,128,432∶128,1∶1,0.296,55296
+41,0.06M3,"Nintendo Entertainment System, Super Nintendo Entertainment System",256,×,224,256∶224,4∶3,7∶6,57344
+42,0.06M1,Apple iPod Nano 6G,240,×,240,1∶1,1∶1,1∶1,57600
+43,0.06M6,Atari 400/800 PAL,320,×,192,5∶3,5∶3,1∶1,61440
+44,Color Graphics Adapter (CGA),"CGA 4-color, ATM 16 color, Atari ST 16 color, Commodore 64 VIC-II Hires, Amiga OCS NTSC Lowres, Apple IIGS LoRes, MCGA",320,×,200,8∶5,4∶3,0.833,64000
+45,0.07M1,Elektronika BK,256,×,256,1∶1,1∶1,1∶1,65536
+46,0.07M3,Sinclair QL,256,×,256,1∶1,4∶3,4∶3,65536
+47,0.07M2,UIQ 2.x based smartphones,320,×,208,320∶208,3∶2,0.975,66560
+48,0.07M2,"Sega Nomad, Neo Geo AES",320,×,224,10∶7,3∶2,1.05,71680
+49,QVGA,"Quarter VGA:Mega Drive, Apple iPod Nano 3G, Nintendo 3DS (lower screen)",320,×,240,4∶3,4∶3,1∶1,76800
+50,0.08M4,"Acorn BBC 40 column modes, Amiga OCS PAL Lowres",320,×,256,5∶4,5∶4,1∶1,81920
+51,0.09M9,Apple iPod Nano 5G,376,×,240,376∶240,14∶9,0.993,90240
+52,0.09M0.8,Apple Watch 38mm,272,×,340,272∶340,4:5,1∶1,92480
+53,WQVGA,Wide QVGA:Common on Windows Mobile 6 handsets,400,×,240,5∶3,5∶3,1∶1,96000
+54,0.1M1,"Palm (PDA) HiRes, Samsung Galaxy Gear",320,×,320,1∶1,1∶1,1∶1,102400
+55,WQVGA,Wide QVGA:Apple iPod Nano 7G,432,×,240,9∶5,9∶5,1∶1,103680
+56,0.11M3,Apple IIe Double Hires (1 bit per pixel)[5],560,×,192,560∶192,4∶3,0.457,107520
+57,0.11M2,TurboExpress,400,×,270,400∶270,3∶2,1.013,108000
+58,0.11M3,MSX2,512,×,212,512∶212,4∶3,0.552,108544
+59,0.11M3,Common Intermediate Format,384,×,288,4∶3,4∶3,1∶1,110592
+60,WQVGA*,"Variant used commonly for portable DVD players, digital photo frames, GPS receivers and devices such as the Kenwood DNX-5120 and Glospace SGK-70; often marketed as ""16:9""",480,×,234,480∶234,16∶9,0.866,112320
+61,qSVGA,Quarter SVGA:Selectable in some PC shooters,400,×,300,4∶3,4∶3,1∶1,120000
+62,0.12M3,Teletext and Viewdata 40×25 character screens (PAL non-interlaced),480,×,250,480∶250,4∶3,0.694,120000
+63,0.12M0.8,Apple Watch 42mm,312,×,390,312∶390,4:5,1∶1,121680
+64,0.13M3,Amiga OCS NTSC Lowres interlaced,320,×,400,320∶400,4∶3,5∶3,128000
+65,Color Graphics Adapter (CGA),"Atari ST 4 color, ATM, CGA mono, Amiga OCS NTSC Hires, Apple IIGS HiRes, Nokia Series 80 smartphones",640,×,200,640∶200,4∶3,0.417,128000
+66,0.13M9,"Sony PlayStation Portable, Zune HD, Neo Geo X",480,×,272,480∶272,16∶9,1.007,130560
+67,0.13M2∶1,"Elektronika BK, Polyplay",512,×,256,2∶1,2∶1,1∶1,131072
+68,0.13M3,Sinclair QL,512,×,256,2∶1,4∶3,0.667,131072
+69,0.15M13∶11,"Nokia Series 60 smartphones (E60, E70, N80, N90)",416,×,352,13∶11,13∶11,1∶1,146432
+70,HVGA,"Palm Tungsten T3, Apple iPhone, HTC Dream, Palm (PDA) HiRES+",480,×,320,3∶2,3∶2,1∶1,153600
+71,HVGA,Handheld PC,640,×,240,640∶240,8:3,1∶1,153600
+72,0.16M3,"Acorn BBC 80 column modes, Amiga OCS PAL Hires",640,×,256,640∶256,4∶3,0.533,163840
+73,0.18M2,"Black & white Macintosh (9"")",512,×,342,512∶342,3∶2,1.002,175104
+74,0.19M6,"Nintendo 3DS (upper screen in 3D mode: 2× 400 × 240, one for each eye)",800,×,240,800∶240,5∶3,0.5,192000
+75,0.2M3,"Macintosh LC (12"")/Color Classic (also selectable in many PC shooters)",512,×,384,4∶3,4∶3,1∶1,196608
+76,0.2M2∶1,"Nokia Series 90 smartphones (7700, 7710)",640,×,320,2∶1,2∶1,1∶1,204800
+77,EGA,Enhanced Graphics Adapter:,640,×,350,640∶350,4∶3,0.729,224000
+78,0.23M9,"nHD, used by Nokia 5800, Nokia 5530, Nokia X6, Nokia N97, Nokia N8[6]",640,×,360,16∶9,16∶9,1∶1,230400
+79,0.24M3,Teletext and Viewdata 40×25 character screens (PAL interlaced),480,×,500,480∶500,4∶3,1.389,240000
+80,0.25M3,HGC,720,×,348,720∶348,4∶3,0.644,250560
+81,0.25M3,MDA,720,×,350,720∶350,4∶3,0.648,252000
+82,0.26M3,"Atari ST mono, Amiga OCS NTSC Hires interlaced",640,×,400,8∶5,4∶3,0.833,256000
+83,0.26M3,Apple Lisa,720,×,364,720∶364,4∶3,0.674,262080
+84,0.28M2.273,Nokia E90 Communicator,800,×,352,800∶352,25:11,1∶1,281600
+85,0.29M4,Some older monitors,600,×,480,5∶4,5∶4,1∶1,288000
+86,VGA,"Video Graphics Array:MCGA (in monochome), Sun-1 color",640,×,480,4∶3,4∶3,1∶1,307200
+87,0.33M3,Amiga OCS PAL Hires interlaced,640,×,512,5∶4,4∶3,1.066,327680
+88,WVGA,Wide VGA:,768,×,480,8∶5,8∶5,1∶1,368640
+89,WGA,Wide VGA:List of mobile phones with WVGA display,800,×,480,5∶3,5∶3,1∶1,384000
+90,W-PAL,Wide PAL:,848,×,480,848∶480,16∶9,1.006,407040
+91,FWVGA,List of mobile phones with FWVGA display,854,×,480,854∶480,16∶9,0.999,409920
+92,SVGA,Super VGA:,800,×,600,4∶3,4∶3,1∶1,480000
+93,qHD,"Quarter FHD:AACS ICT, HRHD, Motorola Atrix 4G, Sony XEL-1[7][unreliable source?]",960,×,540,16∶9,16∶9,1∶1,518400
+94,0.52M3,Apple Macintosh Half Megapixel[8],832,×,624,4∶3,4∶3,1∶1,519168
+95,0.52M9,PlayStation Vita (PSV),960,×,544,960∶544,16∶9,1.007,522240
+96,0.59M9,PAL 16:9,1024,×,576,16∶9,16∶9,1∶1,589824
+97,DVGA,"Double VGA:Apple iPhone 4S,[9][unreliable source?][10] 4th Generation iPod Touch[11]",960,×,640,3∶2,3∶2,1∶1,614400
+98,WSVGA,Wide SVGA:,1024,×,600,1024∶600,16∶9,1.041,614400
+99,0.66MA,Close to WSVGA,1024,×,640,8∶5,8∶5,1∶1,655360
+100,0.69M3,Panasonic DVCPRO100 for 50/60 Hz over 720p - SMPTE Resolution,960,×,720,4∶3,4∶3,1∶1,691200
+101,0.73M9,"Apple iPhone 5, iPhone 5S, iPhone 5C, iPhone SE (1st)",1136,×,640,1136∶640,16∶9,1.001,727040
+102,0.73M9,Occasional Chromebook resolution with 96 DPI; see HP Chromebook 14A G5.,1138,×,640,16∶9,16∶9,0.999,728320
+103,XGA,Extended Graphics Array:Common on 14″/15″ TFTs and the Apple iPad,1024,×,768,4∶3,4∶3,1∶1,786432
+104,0.82M3,Sun-1 monochrome,1024,×,800,32∶25,4∶3,1.041,819200
+105,0.83MA,"Supported by some GPUs, monitors, and games",1152,×,720,8∶5,8∶5,1∶1,829440
+106,0.88M2,Apple PowerBook G4 (original Titanium version),1152,×,768,3∶2,3∶2,1∶1,884736
+107,WXGA-H,"Wide XGA:Minimum, 720p HDTV",1280,×,720,16∶9,16∶9,1∶1,921600
+108,0.93M3,NeXT MegaPixel Display,1120,×,832,1120∶832,4∶3,0.99,931840
+109,WXGA,"Wide XGA:Average, BrightView",1280,×,768,5∶3,5∶3,1∶1,983040
+110,XGA+,Apple XGA[note 2],1152,×,864,4∶3,4∶3,1∶1,995328
+111,1M9,"Apple iPhone 6, iPhone 6S, iPhone 7, iPhone 8, iPhone SE (2nd)",1334,×,750,1334∶750,16∶9,0.999,1000500
+112,WXGA,Wide XGA:Maximum,1280,×,800,8∶5,8∶5,1∶1,1024000
+113,1.04M32∶25,"Sun-2 Prime Monochrome or Color Video, also common in Sun-3 and Sun-4 workstations",1152,×,900,32∶25,32∶25,1∶1,1036800
+114,1.05M1∶1,Network Computing Devices,1024,×,1024,1∶1,1∶1,1∶1,1048576
+115,1.05M9,"Standardized HDTV 720p/1080i displays or ""HD ready"", used in most cheaper notebooks",1366,×,768,1366∶768,16∶9,0.999,1049088
+116,1.09M2,Apple PowerBook G4,1280,×,854,1280∶854,3∶2,1.001,1093120
+117,SXGA−,"Super XGA ""Minus"":",1280,×,960,4∶3,4∶3,1∶1,1228800
+118,1.23M2.083,Sony VAIO P series,1600,×,768,1600∶768,25:12,1∶1,1228800
+119,1.3M0.9,HTC Vive (per eye),1080,×,1200,1080∶1200,9:10,1∶1,1296000
+120,WSXGA,Wide SXGA:,1440,×,900,8∶5,8∶5,1∶1,1296000
+121,WXGA+,Wide XGA+:,1440,×,900,8∶5,8∶5,1∶1,1296000
+122,SXGA,Super XGA:,1280,×,1024,5∶4,5∶4,1∶1,1310720
+123,1.38M2,Apple PowerBook G4,1440,×,960,3∶2,3∶2,1∶1,1382400
+124,HD+,900p,1600,×,900,16∶9,16∶9,1∶1,1440000
+125,SXGA+,Super XGA Plus:Lenovo Thinkpad X61 Tablet,1400,×,1050,4∶3,4∶3,1∶1,1470000
+126,1.47M5,Similar to A4 paper format (~123 dpi for A4 size),1440,×,1024,1440∶1024,7∶5,0.996,1474560
+127,1.56M3,HDV 1080i,1440,×,1080,4∶3,4∶3,1∶1,1555200
+128,1.64M10,SGI 1600SW,1600,×,1024,25∶16,25∶16,1∶1,1638400
+129,WSXGA+,Wide SXGA+:,1680,×,1050,8∶5,8∶5,1∶1,1764000
+130,1.78M9,Available in some monitors,1776,×,1000,1776∶1000,16∶9,1.001,1776000
+131,UXGA,Ultra XGA:Lenovo Thinkpad T60,1600,×,1200,4∶3,4∶3,1∶1,1920000
+132,2.05M4,Sun3 Hi-res monochrome,1600,×,1280,5∶4,5∶4,1∶1,2048000
+133,FHD,"Full HD:1080 HDTV (1080i, 1080p)",1920,×,1080,16∶9,16∶9,1∶1,2073600
+134,2.07M1,Windows Mixed Reality headsets (per eye),1440,×,1440,1∶1,1∶1,1∶1,2073600
+135,DCI 2K,DCI 2K:,2048,×,1080,2048∶1080,1.90∶1,1.002,2211840
+136,WUXGA,Wide UXGA:,1920,×,1200,8∶5,8∶5,1∶1,2304000
+137,2.33M2∶1,Xiaomi Mi MIX 2,2160,×,1080,2∶1,2∶1,1∶1,2332800
+138,QWXGA,,2048,×,1152,16∶9,16∶9,1∶1,2359296
+139,2.41M3,"Supported by some GPUs, monitors, and games",1792,×,1344,4∶3,4∶3,1∶1,2408448
+140,FHD+,Full HD Plus:Microsoft Surface 3,1920,×,1280,3∶2,3∶2,1∶1,2457600
+141,2.46M2.10∶1,Samsung Galaxy S10e,2280,×,1080,2.10∶1,2.10∶1,0.995,2462400
+142,2.58M3,"Supported by some GPUs, monitors, and games",1856,×,1392,4∶3,4∶3,1∶1,2583552
+143,2.59M4,"Supported by some GPUs, monitors, and games",1800,×,1440,5∶4,5∶4,1∶1,2592000
+144,CWSXGA,"NEC CRV43,[12] Ostendo CRVD,[13] Alienware Curved Display[14][15]",2880,×,900,2880∶900,16:5,1∶1,2592000
+145,2.59M9,"HTC Vive, Oculus Rift (both eyes)",2160,×,1200,9∶5,9∶5,1∶1,2592000
+146,2.62MA,"Supported by some GPUs, monitors, and games",2048,×,1280,8∶5,8∶5,1∶1,2621440
+147,TXGA,Tesselar XGA:,1920,×,1400,1920∶1400,7∶5,1.021,2688000
+148,2.74M2.165,Apple iPhone X,2436,×,1125,2436∶1125,2.165,1∶1,2740500
+149,2.74M1AD,Avielo Optix SuperWide 235 projector[16],2538,×,1080,2.35∶1,2.35∶1,1.017,2741040
+150,2.76M3,"Supported by some GPUs, monitors, and games",1920,×,1440,4∶3,4∶3,1∶1,2764800
+151,UW-FHD,"UltraWide FHD:Cinema TV from Philips and Vizio, Dell UltraSharp U2913WM, ASUS MX299Q, NEC EA294WMi, Philips 298X4QJAB, LG 29EA93, AOC Q2963PM",2560,×,1080,21∶9,21∶9,1∶1,2764800
+152,3.11M2,Microsoft Surface Pro 3,2160,×,1440,3∶2,3∶2,1∶1,3110400
+153,QXGA,Quad XGA:iPad (3rd Generation),2048,×,1536,4∶3,4∶3,1∶1,3145728
+154,3.32MA,"Maximum resolution of the Sony GDM-FW900, Hewlett Packard A7217A and the Retina Display MacBook",2304,×,1440,8∶5,8∶5,1∶1,3317760
+155,3.39MA,Surface Laptop,2256,×,1504,3∶2,8∶5,1.067,3393024
+156,WQHD,"Wide Quad HD:Dell UltraSharp U2711, Dell XPS One 27, Apple iMac",2560,×,1440,16∶9,16∶9,1∶1,3686400
+157,3.98M3,Supported by some displays and graphics cards[17][unreliable source?][18],2304,×,1728,4∶3,4∶3,1∶1,3981312
+158,WQXGA,"Wide QXGA:Apple Cinema HD 30, Apple 13"" MacBook Pro's Retina Display, Dell Ultrasharp U3011, Dell 3007WFP, Dell 3008WFP, Gateway XHD3000, Samsung 305T, HP LP3065, HP ZR30W, Nexus 10",2560,×,1600,8∶5,8∶5,1∶1,4096000
+159,4.15M2∶1,"LG G6, LG V30, Pixel 2 XL, HTC U11+, Windows Mixed Reality headsets (both eyes)",2880,×,1440,2∶1,2∶1,1∶1,4147200
+160,Infinity Display,"Samsung Galaxy S8, S8+, S9, S9+, Note 8",2960,×,1440,18½∶9,18½∶9,1∶1,4262400
+161,4.35M2,Chromebook Pixel,2560,×,1700,2560∶1700,3∶2,0.996,4352000
+162,4.61M1.422,Pixel C,2560,×,1800,2560∶1800,64:45,1∶1,4608000
+163,4.67MA,Lenovo Thinkpad W541,2880,×,1620,16∶9,8∶5,0.9,4665600
+164,4.92M3,"Max. CRT resolution, supported by the Viewsonic P225f and some graphics cards",2560,×,1920,4∶3,4∶3,1∶1,4915200
+165,Ultra-Wide QHD,"LG, Samsung, Acer, HP and Dell UltraWide monitors",3440,×,1440,3440∶1440,21∶9,1∶1,4953600
+166,4.99M2,Microsoft Surface Pro 4,2736,×,1824,3∶2,3∶2,1∶1,4990464
+167,5.18MA,"Apple 15""MacBook Pro's Retina Display",2880,×,1800,8∶5,8∶5,1∶1,5184000
+168,QSXGA,Quad SXGA:,2560,×,2048,5∶4,5∶4,1∶1,5242880
+169,5.6M3,"iPad Pro 12.9""",2732,×,2048,4∶3,4∶3,0.999,5595136
+170,WQXGA+,"Wide QXGA+:HP Envy TouchSmart 14, Fujitsu Lifebook UH90/L, Lenovo Yoga 2 Pro",3200,×,1800,16∶9,16∶9,1∶1,5760000
+171,QSXGA+,Quad SXGA+:,2800,×,2100,4∶3,4∶3,1∶1,5880000
+172,3K,"Microsoft Surface Book, Huawei MateBook X Pro[19]",3000,×,2000,3∶2,3∶2,1∶1,6000000
+173,UW4K,Ultra-Wide 4K:,3840,×,1600,2.35∶1,21∶9,0.988,6144000
+174,WQSXGA,Wide QSXGA:,3200,×,2048,25∶16,25∶16,1∶1,6553600
+175,7M2,"Microsoft Surface Book 2 15""",3240,×,2160,3∶2,3∶2,1∶1,6998400
+176,QUXGA,Quad UXGA:,3200,×,2400,4∶3,4∶3,1∶1,7680000
+177,4K UHD-1,"4K Ultra HD 1:2160p, 4000-lines UHDTV (4K UHD)",3840,×,2160,16∶9,16∶9,1∶1,8294400
+178,DCI 4K,DCI 4K:,4096,×,2160,4096∶2160,1.90∶1,1.002,8847360
+179,WQUXGA,Wide QUXGA:IBM T221,3840,×,2400,8∶5,8∶5,1∶1,9216000
+180,UW5K (WUHD),Ultra-Wide 5K:21:9 aspect ratio TVs,5120,×,2160,21∶9,21∶9,1∶1,11059200
+181,HXGA,Hex XGA:,4096,×,3072,4∶3,4∶3,1∶1,12582912
+182,13.5M2,Surface Studio,4500,×,3000,3∶2,3∶2,1∶1,13500000
+183,5K,"Dell UP2715K, Apple 27"" iMac 5K Retina Display",5120,×,2880,16∶9,16∶9,1∶1,14745600
+184,WHXGA,Wide HXGA:,5120,×,3200,8∶5,8∶5,1∶1,16384000
+185,HSXGA,Hex SXGA:,5120,×,4096,5∶4,5∶4,1∶1,20971520
+186,6K,"Apple 32"" Pro Display XDR [20] 6K Retina Display",6016,×,3384,16∶9,16∶9,1∶1,20358144
+187,WHSXGA,Wide HSXGA:,6400,×,4096,25∶16,25∶16,1∶1,26214400
+188,HUXGA,Hex UXGA:,6400,×,4800,4∶3,4∶3,1∶1,30720000
+189,8K UHD-2,"8K Ultra HD 2:4320p, 8000-lines UHDTV (8K UHD)",7680,×,4320,16∶9,16∶9,1∶1,33177600
+190,WHUXGA,Wide HUXGA:,7680,×,4800,8∶5,8∶5,1∶1,36864000
+191,8K Full Format,DCI 8K:,8192,×,4320,8192∶4320,1.90∶1,1.002,35389440
+192,—,,8192,×,4608,16∶9,16∶9,1∶1,37748736
+193,UW10K,Ultra-Wide 10K:,10240,×,4320,21∶9,21∶9,1∶1,44236800
+194,8K Fulldome,8K Fulldome,8192,×,8192,1∶1,1∶1,1∶1,67108864
+195,12K,3x4K:12K gaming PC,11520,×,2160,11520∶2160,48:9,5.333,24883200
+196,16K,16K,15360,×,8640,16∶9,16∶9,1∶1,132710400

@@ -19,19 +19,20 @@ class DAQReader(threading.Thread):
         self.test_arduino()
 
     def run(self):
-        last_update = time.time()
         while True:
             if config.run == False:
                 self.stop()
                 break
             if self.plugged == True:
                 channels = self.read_all_channels()
-                self.q.put( [time.time(), channels] )
-                if time.time() - last_update > 10:
-                    logging.debug("Arduino reader is currently running with no issues: " + str(channels))
-                    last_update = time.time()
+                with self.q.mutex:
+                    self.q.queue.clear()
+                self.q.put( [self.t, channels] )
             elif self.plugged == False:
                 self.test_arduino()
+
+    def join(self):
+        self.stop()
 
     def stop(self):
         self.arduino.close()
@@ -57,6 +58,7 @@ class DAQReader(threading.Thread):
                 data_d = ""
                 save_next = False 
             if len(results) == len(channels):
+                self.t = time.time()
                 return results
             if save_next == True:
                 results.append( data_d )

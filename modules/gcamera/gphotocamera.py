@@ -15,10 +15,10 @@ class GPhotoCamera(threading.Thread):
         self.index = index
         print(self.index)
         self.name = name
-        if not os.path.exists(config.experiment_path):
-            os.makedirs(config.experiment_path)
+        if not os.path.exists(config.experiment_path+config.status+"/"):
+            os.makedirs(config.experiment_path+config.status+"/")
         self.init_gcam(index, name, addr)
-        config.cameras[self.name+str(self.index)] = True
+        config.devices[self.name+str(self.index)] = True
 
     def init_gcam(self, index, name, addr):
         self.camera = gp.Camera()
@@ -32,25 +32,36 @@ class GPhotoCamera(threading.Thread):
         self.plugged = True
         logging.debug('Camera running')
         while True:
+            last_grab = time.time()
             if config.run == False:
                 self.stop()
                 break
-            if config.gtrigger == True:
-                config.cameras[self.name+str(self.index)] = False
+            if config.trigger == True:
+                config.devices[self.name+str(self.index)] = False
                 logging.debug("Gphoto camera triggered")
                 self.i2 = self.camera.capture(gp.GP_CAPTURE_IMAGE)
                 self.t = time.time()
                 self.f2 = self.camera.file_get(self.i2.folder,self.i2.name,gp.GP_FILE_TYPE_NORMAL)
-                self.q.put( [self.t, self.i2.name] )
+                self.filename = config.experiment_path+config.status+"/"+str(self.t)+"gcam"+str(self.index)+self.i2.name
+                self.q.put( [self.t, self.filename] )
                 self.empty_queue()
                 self.save_photo()
-                config.cameras[self.name+str(self.index)] = True
-                config.gtrigger = False
-                
+                config.devices[self.name+str(self.index)] = True
+                config.trigger = False
+            if config.preview == True:
+                config.devices[self.name+str(self.index)] = False
+                logging.debug("Gphoto camera triggered")
+                self.i2 = self.camera.capture(gp.GP_CAPTURE_IMAGE)
+                self.f2 = self.camera.file_get(self.i2.folder,self.i2.name,gp.GP_FILE_TYPE_NORMAL)
+                self.filename = config.experiment_path+"preview"+"/"+"gcam"+str(self.index)+".png"
+                self.empty_queue()
+                self.save_photo()
+                config.devices[self.name+str(self.index)] = True
+                config.preview = False
+
     def save_photo(self):
-        dest2 = os.path.join( config.experiment_path, str(self.t)+"g"+str(self.index)+self.i2.name)
-        self.f2.save(dest2)
-        logging.debug("Saved gPhoto camera image to '%s'" % dest2)
+        self.f2.save(self.filename)
+        logging.debug("Saved gPhoto camera image to '%s'" % self.filename)
 
     def empty_queue(self):
         typ,data = self.camera.wait_for_event(200)

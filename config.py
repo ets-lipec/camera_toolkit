@@ -1,5 +1,11 @@
+import os
+
 run = True
-gtrigger = False
+status = "calibration"
+preview = False
+trigger = False
 framebuffer = None
-experiment_path = "./Experiment/"
-cameras = {}
+experiment_path = os.getcwd()+"/Dummy_experiment/"
+devices = {}
+count = 0
+timestep = 3

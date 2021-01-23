@@ -18,7 +18,7 @@ class WebcamVideoStream :
         (self.grabbed, self.frame) = self.stream.read()
         self.started = False
         self.read_lock = Lock()
-        config.cameras["opencv"+str(self.src)] = True
+        config.devices["opencv"+str(self.src)] = True
         logging.debug("OpenCV camera is __init__.")
 
     def start(self) :
@@ -36,18 +36,28 @@ class WebcamVideoStream :
             self.t = time.time()
             self.grabbed, self.frame = grabbed, frame
             self.read_lock.release()
-            if config.gtrigger == True:
-                config.cameras["opencv"+str(self.src)] = False
+            if config.trigger == True:
+                config.devices["opencv"+str(self.src)] = False
                 frame = self.get()
                 logging.debug("Open CV camera triggered.")
-                self.q.put( [self.t, frame] )
+                self.filename = config.experiment_path+config.status+"/"+str(self.t)+"ocv"+str(self.src)+".png"
+                self.q.put( [self.t, self.filename] )
                 self.save_image(frame)
-                config.cameras["opencv"+str(self.src)] = True
-                config.gtrigger = False
+                config.devices["opencv"+str(self.src)] = True
+                config.trigger = False
+            if config.preview == True:
+                config.devices["opencv"+str(self.src)] = False
+                frame = self.get()
+                logging.debug("Open CV camera triggered.")
+                self.filename = config.experiment_path+"preview"+"/"+"ocv"+str(self.src)+".png"
+                print("FILENAME: ", self.filename)
+                self.save_image(frame)
+                config.devices["opencv"+str(self.src)] = True
+                config.preview = False
 
     def save_image(self, frame):
-        cv2.imwrite(config.experiment_path+str(self.t)+"ocv"+str(self.src)+".png", frame)
-        logging.debug("Saved Open CV camera image to: "+ config.experiment_path+"ocv"+str(self.t)+".png")
+        cv2.imwrite(self.filename, frame)
+        logging.debug("Saved Open CV camera image to: "+ self.filename)
 
     def get(self) :
         self.read_lock.acquire()

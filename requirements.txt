@@ -1,3 +1,5 @@
 pyserial
 opencv-python
 pandas
+tinydb
+keyboard

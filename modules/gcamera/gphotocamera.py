@@ -53,7 +53,7 @@ class GPhotoCamera(threading.Thread):
                 logging.debug("Gphoto camera triggered")
                 self.i2 = self.camera.capture(gp.GP_CAPTURE_IMAGE)
                 self.f2 = self.camera.file_get(self.i2.folder,self.i2.name,gp.GP_FILE_TYPE_NORMAL)
-                self.filename = config.experiment_path+"preview"+"/"+"gcam"+str(self.index)+".png"
+                self.filename = config.experiment_path+"preview"+"/"+"gcam"+str(self.index)+".jpg"
                 self.empty_queue()
                 self.save_photo()
                 config.devices[self.name+str(self.index)] = True

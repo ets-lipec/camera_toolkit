@@ -13,6 +13,7 @@ config.status = "calibration"
 buffers = {}
 threads = {}
 i = 0
+
 setup_DSLRs = GPhotoUtils()
 for gcamera in setup_DSLRs.camera_list:
     name = gcamera[0]
@@ -20,7 +21,7 @@ for gcamera in setup_DSLRs.camera_list:
     buffers["gcamera"+str(i)] = queue.Queue(maxsize=0)
     threads["gcamera"+str(i)] = GPhotoCamera(args =(buffers["gcamera"+str(i)]), index=i, name=gcamera[0], addr=gcamera[1]) 
     i += 1
-    
+
 opencv_cameras = CV2Utils.returnCameraIndexes()
 opencv_best_res = CV2Utils.returnCameraResolutions( opencv_cameras )
 for cvcamera in opencv_cameras:

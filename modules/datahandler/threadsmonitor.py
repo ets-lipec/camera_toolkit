@@ -6,6 +6,8 @@ import time
 import queue
 import cv2
 from .dbmanager import Entry
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-9s) %(message)s',)
@@ -67,7 +69,8 @@ class Clipboard(threading.Thread):
                         logging.debug("config.preview is FALSE")
                         config.count += 1
                         for infile in glob.glob(config.experiment_path+"preview"+"/"+"*.png"):
-                            print(infile, os.getcwd(), path.exists(infile))
+                            print(infile)
+                            pass
                         config.preview = False
 
             else:

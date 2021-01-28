@@ -1,3 +1,7 @@
-Flask
-pillow
+wheel
+pyserial
 opencv-python
+pandas
+tinydb
+matplotlib
+gphoto2

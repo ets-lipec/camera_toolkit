@@ -7,6 +7,12 @@ from modules import *
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-9s) %(message)s',)
 
+def read_kbd_input(inputQueue):
+    print('Ready for keyboard input:')
+    while (True):
+        input_str = input()
+        inputQueue.put(input_str)
+
 config.status = "experiment"
 buffers = {}
 threads = {}
@@ -43,7 +49,20 @@ for key, thread in threads.items():
     logging.debug("Starting thread: " + key)
     thread.start()
 
-time.sleep(20)
+inputQueue = queue.Queue()
+inputThread = threading.Thread(target=read_kbd_input, args=(inputQueue,), daemon=True)
+inputThread.start()
+
+logging.debug("Press 'Q' or 'C' to exit")
+while (True):
+    if (inputQueue.qsize() > 0):
+        input_str = inputQueue.get()
+        print("input_str = {}".format(input_str))
+        if (input_str == "q"):
+            config.run = False
+            logging.debug("Exiting serial terminal.")
+            break 
+        time.sleep(0.01)
 
 config.run = False  
 logging.debug("Config.run is False")

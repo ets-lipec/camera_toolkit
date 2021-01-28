@@ -6,8 +6,6 @@ import time
 import queue
 import cv2
 from .dbmanager import Entry
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-9s) %(message)s',)

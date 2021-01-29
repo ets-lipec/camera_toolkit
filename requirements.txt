@@ -5,3 +5,4 @@ pandas
 tinydb
 matplotlib
 gphoto2
+asciiplotlib

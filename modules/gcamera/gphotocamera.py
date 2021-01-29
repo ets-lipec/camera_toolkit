@@ -42,12 +42,11 @@ class GPhotoCamera(threading.Thread):
                 self.i2 = self.camera.capture(gp.GP_CAPTURE_IMAGE)
                 self.t = time.time()
                 self.f2 = self.camera.file_get(self.i2.folder,self.i2.name,gp.GP_FILE_TYPE_NORMAL)
-                self.filename = config.experiment_path+config.status+"/g"+"_"+str(config.count)+"_"+str(self.index)+".png"
+                self.filename = config.experiment_path+config.status+"/g"+"_"+str(config.count).zfill(4) +"_"+str(self.index)+".png"
                 self.q.put( [self.t, self.filename] )
                 self.empty_queue()
                 self.save_photo()
                 config.devices[self.name+str(self.index)] = True
-                config.trigger = False
             if config.preview == True:
                 config.devices[self.name+str(self.index)] = False
                 logging.debug("Gphoto camera triggered")
@@ -57,7 +56,6 @@ class GPhotoCamera(threading.Thread):
                 self.empty_queue()
                 self.save_photo()
                 config.devices[self.name+str(self.index)] = True
-                config.preview = False
 
     def save_photo(self):
         self.f2.save(self.filename)

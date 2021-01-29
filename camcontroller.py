@@ -32,7 +32,7 @@ if config.opencv:
 
 if config.serial:
     serial_buffer = queue.Queue(maxsize=0)
-    arduino = DAQReader(args = (serial_buffer))
+    arduino = DAQReader(args = (serial_buffer), baudrate = config.serial_baudrate ,port = config.serial_port)
     buffers["arduino"] = serial_buffer
     threads["arduino"] = arduino
 
@@ -54,6 +54,7 @@ while (True):
         if (input_str == "q"):
             config.run = False
             logging.debug("Exiting serial terminal.")
+            logging.debug("Wait for the connection closed signal before Ctrl+C...")
             break 
         elif (input_str == "s"):
             config.trigger = True

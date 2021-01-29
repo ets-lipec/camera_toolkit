@@ -5,6 +5,7 @@ import config
 import time
 import queue
 import cv2
+from datetime import datetime
 from .dbmanager import Entry
 
 logging.basicConfig(level=logging.DEBUG,
@@ -18,6 +19,9 @@ class Clipboard(threading.Thread):
         self.kwargs = kwargs
         self.dbqueue = queue.Queue(maxsize=0)
         self.dbthread = Entry(args = (self.dbqueue))
+        now = datetime.now()
+        date_prefix = str(now.strftime("%Y%m%d-%H%M"))
+        config.experiment_path = config.experiment_path + date_prefix + "/"
         if not os.path.exists(config.experiment_path+config.status+"/"):
             os.makedirs(config.experiment_path+config.status+"/")
         if not os.path.exists(config.experiment_path+"preview"+"/"):
@@ -31,9 +35,9 @@ class Clipboard(threading.Thread):
                 break
             if config.status == "experiment":
                 if time.time() - last_grab > config.timestep and all(value == True for value in config.devices.values()):
+                    config.trigger = True
                     logging.debug("TIME FOR A SHOT " + str(time.time() - last_grab ))
                     last_grab = time.time()
-                    config.trigger = True
                     logging.debug("config.trigger is TRUE")
                     logging.debug("The queue contains "+str(len(self.queues.items())) + " objects.")
                     cycle_results = {}
@@ -64,17 +68,15 @@ class Clipboard(threading.Thread):
                         config.preview = True
                         logging.debug("TIME FOR A PREVIEW SHOT " + str(time.time() - last_grab ))
                         last_grab = time.time()
-                        logging.debug("config.preview is FALSE")
                         config.count += 1
                         for infile in glob.glob(config.experiment_path+"preview"+"/"+"*.png"):
-                            print(infile)
                             pass
                         config.preview = False
+                        logging.debug("config.preview is FALSE")
 
             else:
                 if time.time() - last_grab > 15:
                     logging.debug("Standby in an unkown mode")
-
 
     def stop(self):
         pass

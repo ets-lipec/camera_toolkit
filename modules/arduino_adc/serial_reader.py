@@ -2,6 +2,7 @@ import threading
 import serial, time
 import logging
 import config
+import asciiplotlib as apl
 
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-9s) %(message)s',)
@@ -17,6 +18,8 @@ class DAQReader(threading.Thread):
         self.baudrate = baudrate
         self.kwargs = kwargs
         self.test_arduino()
+        self.update = 500
+        self.last_values = []
 
     def run(self):
         while True:
@@ -28,8 +31,23 @@ class DAQReader(threading.Thread):
                 with self.q.mutex:
                     self.q.queue.clear()
                 self.q.put( [self.t, channels] )
+                self.last_values.append( [self.t, channels] )
+                if len(self.last_values) > self.update:
+                    self.preview_plot()
+                    self.last_values = []
+                self.arduino.flushInput()
             elif self.plugged == False:
                 self.test_arduino()
+
+    def preview_plot(self):
+        x = []
+        y = []
+        for count, event in enumerate(self.last_values):
+            x.append(float(count))
+            y.append(float(event[1][0]))
+        fig = apl.figure()
+        fig.plot(x, y, label="ch0", width=50, height=15)
+        fig.show() 
 
     def join(self):
         self.stop()
@@ -47,7 +65,7 @@ class DAQReader(threading.Thread):
             self.plugged = False
 
     def read_all_channels(self):
-        channels = ["1:", "2:"]
+        channels = ["1:"]
         results = []
         save_next = False
         while True:

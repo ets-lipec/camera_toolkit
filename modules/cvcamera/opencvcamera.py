@@ -40,20 +40,17 @@ class WebcamVideoStream :
                 config.devices["opencv"+str(self.src)] = False
                 frame = self.get()
                 logging.debug("Open CV camera triggered.")
-                self.filename = config.experiment_path+config.status+"/"+str(self.t)+"ocv"+str(self.src)+".png"
+                self.filename = config.experiment_path+config.status+"/o"+"_"+str(config.count).zfill(4) +"_"+str(self.src)+".png"
                 self.q.put( [self.t, self.filename] )
                 self.save_image(frame)
                 config.devices["opencv"+str(self.src)] = True
-                config.trigger = False
             if config.preview == True:
                 config.devices["opencv"+str(self.src)] = False
                 frame = self.get()
                 logging.debug("Open CV camera triggered.")
                 self.filename = config.experiment_path+"preview"+"/"+"ocv"+str(self.src)+".png"
-                print("FILENAME: ", self.filename)
                 self.save_image(frame)
                 config.devices["opencv"+str(self.src)] = True
-                config.preview = False
 
     def save_image(self, frame):
         cv2.imwrite(self.filename, frame)

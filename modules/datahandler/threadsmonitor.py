@@ -5,7 +5,7 @@ import config
 import time
 import queue
 import cv2
-
+import shutil
 from .dbmanager import Entry
 
 logging.basicConfig(level=logging.DEBUG,
@@ -19,7 +19,7 @@ class Clipboard(threading.Thread):
         self.kwargs = kwargs
         self.dbqueue = queue.Queue(maxsize=0)
         self.dbthread = Entry(args = (self.dbqueue))
-        
+        shutil.copy(config.data_export_script, config.experiment_path+"data_export.py")
         if not os.path.exists(config.experiment_path+config.status+"/"):
             os.makedirs(config.experiment_path+config.status+"/")
         if not os.path.exists(config.experiment_path+"preview"+"/"):

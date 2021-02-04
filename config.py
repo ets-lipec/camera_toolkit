@@ -17,3 +17,4 @@ trigger = False
 framebuffer = None
 devices = {}
 count = 0
+data_export_script = os.getcwd()+"/export_data.py"

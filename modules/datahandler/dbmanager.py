@@ -3,6 +3,7 @@ import logging
 from tinydb import TinyDB, where
 import os
 import config
+from datetime import datetime
 
 logging.basicConfig(level=logging.DEBUG,
                     format='(%(threadName)-9s) %(message)s',)
@@ -14,6 +15,9 @@ class Entry(threading.Thread):
         self.q = args
         self.kwargs = kwargs
         self.index = index
+        now = datetime.now()
+        date_prefix = str(now.strftime("%Y%m%d-%H%M"))
+        config.experiment_path = config.experiment_path + date_prefix + "/"
         if not os.path.exists(config.experiment_path):
             os.makedirs(config.experiment_path)
         self.db = TinyDB(config.experiment_path + "/" + "data.json")

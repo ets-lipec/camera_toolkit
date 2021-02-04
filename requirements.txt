@@ -1,0 +1,8 @@
+wheel
+pyserial
+opencv-python
+pandas
+tinydb
+matplotlib
+gphoto2
+asciiplotlib

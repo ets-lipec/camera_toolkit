@@ -44,6 +44,10 @@ keyboard = KeyMonitor( args=(inputQueue) )
 for key, thread in threads.items():
     logging.debug("Starting thread: " + key)
     thread.start()
+if config.continuous_serial == True:
+    continuous_logger = DAQLogger(args = (serial_buffer))
+    continuous_logger.start()
+
 
 keyboard.start()
 logging.debug("Press 'Q' to exit.")

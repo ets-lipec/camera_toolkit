@@ -67,8 +67,8 @@ class Clipboard(threading.Thread):
                         logging.debug("TIME FOR A PREVIEW SHOT " + str(time.time() - last_grab ))
                         last_grab = time.time()
                         config.count += 1
-                        for infile in glob.glob(config.experiment_path+"preview"+"/"+"*.png"):
-                            pass
+                        #for infile in glob.glob(config.experiment_path+"preview"+"/"+"*.png"):
+                        #    pass
                         config.preview = False
                         logging.debug("config.preview is FALSE")
 

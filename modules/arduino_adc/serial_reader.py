@@ -18,7 +18,7 @@ class DAQReader(threading.Thread):
         self.baudrate = baudrate
         self.kwargs = kwargs
         self.test_arduino()
-        self.update = 500
+        self.update = 200
         self.last_values = []
 
     def run(self):
@@ -46,7 +46,7 @@ class DAQReader(threading.Thread):
             x.append(float(count))
             y.append(float(event[1][0]))
         fig = apl.figure()
-        fig.plot(x, y, label="ch0", width=50, height=15)
+        fig.plot(x, y, label="ch0", width=25, height=6)
         fig.show() 
 
     def join(self):

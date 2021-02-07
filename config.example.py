@@ -2,8 +2,8 @@ import os
 
 status = "experiment" # Can be 'experiment' or 'calibration'
 
-serial = True # Will you be using an Arduino for ADC acquisition ?
-continuous_serial = True #If True, Arduino data will be constantly logged as well as when a picture is grabbed
+serial = False # Will you be using an Arduino for ADC acquisition ?
+continuous_serial = False #If True, Arduino data will be constantly logged as well as when a picture is grabbed
 serial_port = "/dev/ttyACM0"
 serial_baudrate = 115200
 
